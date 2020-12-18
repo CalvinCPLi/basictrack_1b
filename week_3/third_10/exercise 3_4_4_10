@@ -1,0 +1,13 @@
+import turtle
+import math
+
+bob = turtle.Turtle()
+builder = turtle.Screen()
+
+pairs = [(0, 100), (90, 100), (135, (2**0.5)*100), (45+180, 100), (270, 100), (120, 100), (120, 100), (75, (2**0.5)*100)]
+
+for angle, distance in pairs:
+    bob.left(angle)
+    bob.forward(distance)
+
+builder.exitonclick()
